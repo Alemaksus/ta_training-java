@@ -1,7 +1,7 @@
 package com.epam.training.aleksandr_maksakov;
 
 /**
- * Hello world!
+ * Hello world! It's my first script.
  *
  */
 public class App 
