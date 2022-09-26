@@ -1,0 +1,10 @@
+Started by user [8mha:////4EFXZAZtJJUEHAUZs4hK3YIH7389J3MTXsaAbBXW3QV4AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzFEgZu/dLi1CL9xJTczDwAcvolL8AAAAA=[0mMaksakov Aleksandr Stanislavovich
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\job_1
+[job_1] $ cmd /c call C:\WINDOWS\TEMP\jenkins3716734874740623068.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\job_1>ECHO Hello from Jenkins! 
+Hello from Jenkins!
+
+C:\ProgramData\Jenkins\.jenkins\workspace\job_1>exit 0 
+Finished: SUCCESS

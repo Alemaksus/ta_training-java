@@ -1,0 +1,7 @@
+Started by user [8mha:////4OaW1mj8Mx4KNIPK7E/1tot0+u1AKRa97at8+o0ayCOpAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9xJTczDwAcQdo88AAAAA=[0mAleks_Maksakov
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Artifact publisher
+Archiving artifacts
+Сhttps://github.com/vitalliuss/helloci/blob/master/Java/src/test/java/com/github/vitalliuss/helloci/AppTest.javaТ совпадени€ не найдены: Сhttps:Т не существует
+ERROR: Step С«аархивировать артефактыТ failed: јртефактов, соответствующих шаблону "https://github.com/vitalliuss/helloci/blob/master/Java/src/test/java/com/github/vitalliuss/helloci/AppTest.java", не найдено. ќшиблись при конфигурировании?
+Finished: FAILURE

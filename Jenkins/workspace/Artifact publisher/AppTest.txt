@@ -1,0 +1,1 @@
+“Java\target\surefire-reports\com.github.vitalliuss.helloci.AppTest.txt” 
