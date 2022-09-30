@@ -2,7 +2,7 @@
 <user>
   <version>10</version>
   <id>user</id>
-  <fullName>user</fullName>
+  <fullName>User</fullName>
   <description></description>
   <properties>
     <jenkins.security.ApiTokenProperty>
