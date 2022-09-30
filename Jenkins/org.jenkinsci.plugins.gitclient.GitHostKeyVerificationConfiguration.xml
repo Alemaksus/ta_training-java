@@ -1,0 +1,4 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration plugin="git-client@3.12.1">
+  <sshHostKeyVerificationStrategy class="org.jenkinsci.plugins.gitclient.verifier.KnownHostsFileVerificationStrategy"/>
+</org.jenkinsci.plugins.gitclient.GitHostKeyVerificationConfiguration>

@@ -1,0 +1,18 @@
+<div>
+    Defines a matrix combinations parameter, where users get a table of their
+    possible combinations, and can choose which combination they want to run.
+
+    The parameter result will be:  <br/>
+    axis1==axis1value1 && axis2==axis2value1 || axis1==axis1value2 && axis2==axis2value2 || ...
+
+    <br/><br/>
+    The purpose is to set this combinations filter as follows:<br/>
+    <br/>
+    Since Jenkins version <a href="https://issues.jenkins-ci.org/browse/JENKINS-7285">1.515</a><br/>
+    new GroovyShell(binding).evaluate(<i><b>parmeterName</b></i>)
+
+    <br/>
+    <br/>
+    Before Jenkins version 1.515<br/>
+    if (Thread.currentThread().getClass().getName().equals('hudson.model.OneOffExecutor')) {str=Thread.currentThread().getCurrentExecutable().getBuildVariables().get('<i><b>parameterName</b></i>');new GroovyShell(binding).evaluate(str)}
+</div>

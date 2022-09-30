@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.2
+Build-Jdk-Spec: 11
+Specification-Title: Jenkins Parameterized Trigger plugin
+Specification-Version: 2.45
+Implementation-Title: Jenkins Parameterized Trigger plugin
+Implementation-Version: 2.45
+Plugin-Class: hudson.plugins.parameterizedtrigger.Plugin
+Group-Id: org.jenkins-ci.plugins
+Short-Name: parameterized-trigger
+Long-Name: Jenkins Parameterized Trigger plugin
+Url: https://github.com/jenkinsci/parameterized-trigger-plugin
+Plugin-Version: 2.45
+Hudson-Version: 2.332.1
+Jenkins-Version: 2.332.1
+Plugin-Dependencies: conditional-buildstep:1.4.1;resolution:=optional,ma
+ trix-project:771.v574584b_39e60,promoted-builds:3.11;resolution:=option
+ al,script-security:1158.v7c1b_73a_69a_08,subversion:2.15.5;resolution:=
+ optional
+Plugin-Developers: 
+Plugin-License-Name: The MIT License (MIT)
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/parameterized-trigger-plugin
+

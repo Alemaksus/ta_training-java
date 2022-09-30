@@ -1,12 +1,16 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson>
-  <disabledAdministrativeMonitors/>
-  <version>2.368</version>
+  <disabledAdministrativeMonitors>
+    <string>jenkins.diagnostics.ControllerExecutorsAgents</string>
+  </disabledAdministrativeMonitors>
+  <version>2.371</version>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
-  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
-    <denyAnonymousReadAccess>true</denyAnonymousReadAccess>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>USER:hudson.model.Hudson.Administer:admin</permission>
+    <permission>USER:hudson.model.Item.Read:user</permission>
+    <permission>USER:hudson.model.View.Read:user</permission>
   </authorizationStrategy>
   <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
     <disableSignup>true</disableSignup>
@@ -16,6 +20,7 @@
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
@@ -29,12 +34,37 @@
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
     </hudson.model.AllView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.8">
+      <owner class="hudson" reference="../../.."/>
+      <name>Pipeline</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>job_1</firstJob>
+        <firstJobLink>job/job_1/</firstJobLink>
+      </gridBuilder>
+      <noOfDisplayedBuilds>10</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
+      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
   </views>
   <primaryView>all</primaryView>
-  <slaveAgentPort>-1</slaveAgentPort>
+  <slaveAgentPort>0</slaveAgentPort>
   <label></label>
   <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
-    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+    <excludeClientIPFromCrumb>true</excludeClientIPFromCrumb>
   </crumbIssuer>
   <nodeProperties/>
   <globalNodeProperties/>

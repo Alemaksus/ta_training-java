@@ -1,0 +1,38 @@
+Запущен по таймеру
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Github
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Github\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/vitalliuss/helloci # timeout=10
+Fetching upstream changes from https://github.com/vitalliuss/helloci
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.28.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/vitalliuss/helloci +refs/heads/*:refs/remotes/origin/* # timeout=10
+ERROR: Error fetching remote repo 'origin'
+hudson.plugins.git.GitException: Failed to fetch from https://github.com/vitalliuss/helloci
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:1006)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1248)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1312)
+	at hudson.scm.SCM.checkout(SCM.java:540)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1239)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:649)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:521)
+	at hudson.model.Run.execute(Run.java:1899)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Caused by: hudson.plugins.git.GitException: Command "git.exe fetch --tags --force --progress -- https://github.com/vitalliuss/helloci +refs/heads/*:refs/remotes/origin/*" returned status code 128:
+stdout: 
+stderr: fatal: unable to access 'https://github.com/vitalliuss/helloci/': Could not resolve host: github.com
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2697)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:2111)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$500(CliGitAPIImpl.java:87)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$1.execute(CliGitAPIImpl.java:623)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:1004)
+	... 11 more
+ERROR: Error fetching remote repo 'origin'
+Finished: FAILURE

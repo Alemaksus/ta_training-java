@@ -1,0 +1,84 @@
+Started by user [8mha:////4OaW1mj8Mx4KNIPK7E/1tot0+u1AKRa97at8+o0ayCOpAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZu/dLi1CL9xJTczDwAcQdo88AAAAA=[0mAleks_Maksakov
+Running as SYSTEM
+Собирается удаленно на [8mha:////4PS4KjyBWTiJdpkcTFFHPwSAtfcsWjbimwJF/EnscA4SAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZJ/eT83ILSktQifR/HgBD/AF0DyxAnJwtfRwD8WGhRzgAAAA==[0mLAPTOP-09TBB8MA (chrome win10 x64) in workspace C:\ProgramData\slave\workspace\Github
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\slave\workspace\Github\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/vitalliuss/helloci # timeout=10
+Fetching upstream changes from https://github.com/vitalliuss/helloci
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.28.0.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/vitalliuss/helloci +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision 71518a34152cb6c6039a2443ced60af30a31f14c (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 71518a34152cb6c6039a2443ced60af30a31f14c # timeout=10
+Commit message: "Merge pull request #16 from EvgeniyRozhenko/fix-pom-utf8"
+ > git.exe rev-list --no-walk 71518a34152cb6c6039a2443ced60af30a31f14c # timeout=10
+[Github] $ cmd.exe /C "c:\apache-maven-3.8.6\bin\mvn.cmd -f Java/pom.xml clean test && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.github.vitalliuss.helloci:hello-ci >---------------
+[INFO] Building hello-ci 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4Ezm0y7GR0u2U+KQ+TK/ISqtv4yLydhInn21BLL73aB4AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ hello-ci ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+Progress (1): 4.1/226 kBProgress (1): 8.2/226 kBProgress (1): 12/226 kB Progress (1): 16/226 kBProgress (1): 20/226 kBProgress (1): 25/226 kBProgress (1): 29/226 kBProgress (1): 33/226 kBProgress (1): 37/226 kBProgress (1): 41/226 kBProgress (1): 45/226 kBProgress (1): 49/226 kBProgress (1): 53/226 kBProgress (1): 57/226 kBProgress (1): 61/226 kBProgress (1): 66/226 kBProgress (1): 70/226 kBProgress (1): 74/226 kBProgress (1): 78/226 kBProgress (1): 82/226 kBProgress (1): 86/226 kBProgress (1): 90/226 kBProgress (1): 94/226 kBProgress (1): 98/226 kBProgress (1): 102/226 kBProgress (1): 106/226 kBProgress (1): 111/226 kBProgress (1): 115/226 kBProgress (1): 119/226 kBProgress (1): 123/226 kBProgress (1): 127/226 kBProgress (1): 131/226 kBProgress (1): 135/226 kBProgress (1): 139/226 kBProgress (1): 143/226 kBProgress (1): 147/226 kBProgress (1): 152/226 kBProgress (1): 156/226 kBProgress (1): 160/226 kBProgress (1): 164/226 kBProgress (1): 168/226 kBProgress (1): 172/226 kBProgress (1): 176/226 kBProgress (1): 180/226 kBProgress (1): 184/226 kBProgress (1): 188/226 kBProgress (1): 193/226 kBProgress (1): 197/226 kBProgress (1): 201/226 kBProgress (1): 205/226 kBProgress (1): 209/226 kBProgress (1): 213/226 kBProgress (1): 217/226 kBProgress (1): 221/226 kBProgress (1): 225/226 kBProgress (1): 226 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (226 kB at 156 kB/s)
+[INFO] Deleting C:\ProgramData\slave\workspace\Github\Java\target
+[INFO] 
+[8mha:////4Ezm0y7GR0u2U+KQ+TK/ISqtv4yLydhInn21BLL73aB4AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hello-ci ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\ProgramData\slave\workspace\Github\Java\src\main\resources
+[INFO] 
+[8mha:////4Ezm0y7GR0u2U+KQ+TK/ISqtv4yLydhInn21BLL73aB4AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\ProgramData\slave\workspace\Github\Java\target\classes
+[INFO] 
+[8mha:////4Ezm0y7GR0u2U+KQ+TK/ISqtv4yLydhInn21BLL73aB4AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hello-ci ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\ProgramData\slave\workspace\Github\Java\src\test\resources
+[INFO] 
+[8mha:////4Ezm0y7GR0u2U+KQ+TK/ISqtv4yLydhInn21BLL73aB4AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\ProgramData\slave\workspace\Github\Java\target\test-classes
+[INFO] 
+[8mha:////4Ezm0y7GR0u2U+KQ+TK/ISqtv4yLydhInn21BLL73aB4AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-surefire-plugin:3.0.0-M1:test (default-test) @ hello-ci ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.vitalliuss.helloci.AppTest
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.056 s <<< FAILURE! - in com.github.vitalliuss.helloci.AppTest
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] testShouldBeFailed(com.github.vitalliuss.helloci.AppTest)  Time elapsed: 0.013 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.github.vitalliuss.helloci.AppTest.testShouldBeFailed(AppTest.java:21)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failures: 
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   AppTest.testShouldBeFailed:21
+[INFO] 
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.672 s
+[INFO] Finished at: 2022-09-30T22:51:38+03:00
+[INFO] ------------------------------------------------------------------------
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M1:test (default-test) on project hello-ci: There are test failures.
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Please refer to C:\ProgramData\slave\workspace\Github\Java\target\surefire-reports for the individual test results.
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] -> [Help 1]
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4G80YvEz2nLPTWeFQD4s1DWhMVgScWP3l3KUnQlLYS9HAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Вызвать цели Maven верхнего уровня  ' marked build as failure
+Finished: FAILURE
