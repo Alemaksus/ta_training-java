@@ -1,4 +1,4 @@
-package com.epam.training.student_aleksandr_maksakov.task_carousel;
+package com.epam.training.student_aleksandr_maksakov.sum_of_previous.task_carousel;
 
 import java.util.ArrayList;
 import java.util.List;

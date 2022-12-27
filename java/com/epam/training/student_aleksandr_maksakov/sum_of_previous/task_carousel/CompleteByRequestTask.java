@@ -1,4 +1,4 @@
-package com.epam.training.student_aleksandr_maksakov.task_carousel;
+package com.epam.training.student_aleksandr_maksakov.sum_of_previous.task_carousel;
 
 public class CompleteByRequestTask implements Task {
     private boolean isCompleted = false;

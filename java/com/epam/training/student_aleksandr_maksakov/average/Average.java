@@ -16,5 +16,4 @@ public class Average {
 
         System.out.println((sum) / (count - 1));
     }
-
 }
