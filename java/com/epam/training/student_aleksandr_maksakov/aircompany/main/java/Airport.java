@@ -1,5 +1,5 @@
-import planes.ExperimentalPlane;
 import models.MilitaryTypes;
+import planes.ExperimentalPlane;
 import planes.MilitaryPlane;
 import planes.PassengerPlane;
 import planes.Plane;
