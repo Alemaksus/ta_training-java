@@ -9,17 +9,17 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.concurrent.TimeUnit;
 
 public class HomePage extends BaseUtils {
-    @FindBy(xpath = "//textarea")
-    public WebElement textArea;
+    @FindBy(xpath = "//textarea[@id='postform-text']")
+    public WebElement inputAreaNewPaste;
 
     @FindBy(xpath = "//span[contains(@id, 'select2-postform-expiration-container')]")
-    private WebElement expirationContainer;
+    public WebElement expirationContainer;
 
-    private final By expirationResultTenMinutes =
+    public By expirationResultTenMinutes =
             By.xpath("//li[contains(text(), '10 Minutes')]");
 
     @FindBy(xpath = "//input[@id='postform-name']")
-    private WebElement postFormTitle;
+    public WebElement postFormTitle;
 
     public HomePage() {
         PageFactory.initElements(driver, this);
@@ -31,7 +31,7 @@ public class HomePage extends BaseUtils {
     }
 
     public void inputText(String text) {
-        textArea.sendKeys(text);
+        inputAreaNewPaste.sendKeys(text);
     }
 
     public void selectExpirationDate() {
