@@ -16,5 +16,10 @@
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="d2bc7f21-e09c-4aa7-af22-77bbca79160d" />
+      <option name="name" value="d2bc7f21-e09c-4aa7-af22-77bbca79160d" />
+      <option name="url" value="https://github.com/bonigarcia/webdrivermanager" />
+    </remote-repository>
   </component>
 </project>
