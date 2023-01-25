@@ -15,11 +15,10 @@ public class HomePage extends BaseUtils {
     @FindBy(xpath = "//span[contains(@id, 'select2-postform-expiration-container')]")
     public WebElement expirationContainer;
 
-    public By expirationResultTenMinutes =
-            By.xpath("//li[contains(text(), '10 Minutes')]");
+    public By expirationResultTenMinutes = By.xpath("//li[contains(text(), '10 Minutes')]");
 
     @FindBy(xpath = "//input[@id='postform-name']")
-    public WebElement postFormTitle;
+    public static WebElement postFormTitle;
 
     public HomePage() {
         PageFactory.initElements(driver, this);

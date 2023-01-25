@@ -33,7 +33,7 @@ public class BaseUtils {
         }
     }
     @BeforeClass(alwaysRun = true)
-    public void setup() {
+    public void browserSetup() {
         String browserName = prop.getProperty("browser");
         switch (browserName) {
             case "chrome" -> {
@@ -58,7 +58,7 @@ public class BaseUtils {
     }
 
     @AfterClass(alwaysRun = true)
-    public void shutDown() {
+    public void browserShutDown() {
         driver.quit();
     }
 }
