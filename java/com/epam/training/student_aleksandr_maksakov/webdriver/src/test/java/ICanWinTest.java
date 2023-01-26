@@ -1,7 +1,7 @@
-import org.testng.Assert;
 import utils.BaseUtils;
 import org.testng.annotations.Test;
 import pages.HomePage;
+//import org.testng.Assert;
 
 public class ICanWinTest extends BaseUtils {
 
@@ -19,8 +19,7 @@ public class ICanWinTest extends BaseUtils {
     public void selectExpirationDate() {new HomePage().selectExpirationDate();}
 
     @Test (description = "Title inserted", priority = 4)
-    public void inputTitle() {
-        new HomePage().inputTitle(prop.getProperty("iCanWinTitle"));
+    public void inputTitle() { new HomePage().inputTitle(prop.getProperty("iCanWinTitle"));
         //Assert.assertTrue(HomePage.postFormTitle = config.iCanWinTitle, "Form title is empty");
     }
 
