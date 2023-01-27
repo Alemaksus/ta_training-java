@@ -4,9 +4,6 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.PastePage;
 
-
-
-
 public class BringItOnTest extends BaseUtils {
     @Test (description = "Home page opened", priority = 1)
     public void homePageOpened() {
