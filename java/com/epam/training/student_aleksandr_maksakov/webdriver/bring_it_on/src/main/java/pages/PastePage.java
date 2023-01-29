@@ -11,24 +11,24 @@ import java.util.concurrent.TimeUnit;
 
 public class PastePage extends BaseUtils {
 
-    @FindBy(xpath = "//textarea[@id='postform-text']")
-    public WebElement inputAreaNewPaste;
+    @FindBy(xpath = "//ol [@class='bash']")
+    private WebElement inputAreaNewPaste;
 
     @FindBy(xpath = "//div[@class='left']//a")
-    public WebElement selectedSyntaxArchive;
+    private WebElement selectedSyntaxArchive;
 
-    public final By expirationResultTenMinutes =
+    private final By expirationResultTenMinutes =
             By.xpath("//li[contains(text(), '10 Minutes')]");
 
     @FindBy(xpath = "//input[@id='postform-name']")
-    public WebElement postFormTitle;
+    private WebElement postFormTitle;
 
     public PastePage() {
         PageFactory.initElements(driver, this);
     }
 
     public String getTitle() {
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver.getTitle();
     }
 

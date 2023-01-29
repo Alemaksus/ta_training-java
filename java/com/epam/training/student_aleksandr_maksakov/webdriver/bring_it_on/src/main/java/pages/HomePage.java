@@ -21,20 +21,20 @@ public class HomePage extends BaseUtils {
     private WebElement expirationContainer;
 
     @FindBy(xpath = "//*[@id=\"select2-postform-format-container\"]")
-    public WebElement syntaxContainer;
+    private WebElement syntaxContainer;
 
     @FindBy(xpath = "//input[@id='postform-name']")
-    public WebElement postFormTitle;
+    private WebElement postFormTitle;
 
     @FindBy(xpath = "//button[contains(text(), 'Create New Paste')]")
-    public WebElement createNewPasteButton;
+    private WebElement createNewPasteButton;
     private final By expirationResultTenMinutes =
             By.xpath("//li[contains(text(), '10 Minutes')]");
     private final By syntaxSelectionBash =
             By.xpath("//li[contains(text(),'Bash')]");
 
     private final By selectedSyntaxArchive =
-            By.xpath("//div[@class='de1']");
+            By.xpath("//div[@class='left']//a");
 
     public HomePage() {
         PageFactory.initElements(driver, this);
