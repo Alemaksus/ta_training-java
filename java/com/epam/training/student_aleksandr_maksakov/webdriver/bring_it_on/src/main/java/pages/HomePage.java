@@ -28,6 +28,7 @@ public class HomePage extends BaseUtils {
 
     @FindBy(xpath = "//button[contains(text(), 'Create New Paste')]")
     private WebElement createNewPasteButton;
+
     private final By expirationResultTenMinutes =
             By.xpath("//li[contains(text(), '10 Minutes')]");
     private final By syntaxSelectionBash =
