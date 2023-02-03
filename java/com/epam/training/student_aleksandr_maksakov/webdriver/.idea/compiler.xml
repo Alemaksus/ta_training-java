@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bring_it_on" />
+        <module name="hardcore" />
         <module name="hurt_me_plenty" />
       </profile>
     </annotationProcessing>
