@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.Objects;
 
-
 public class GoogleCloudPrisingCalculatorPage extends BaseUtils{
     @FindBy(xpath = "//label[contains(text(), 'Number of instances')]/following-sibling::input")
     public WebElement instancesInput;
@@ -35,7 +34,7 @@ public class GoogleCloudPrisingCalculatorPage extends BaseUtils{
     @FindBy(xpath = "//button[@ng-click='listingCtrl.addComputeServer(ComputeEngineForm);']")
     public WebElement addEstimateButton;
     private final By operatingSystemSelection =
-            By.xpath("//md-option/div[contains(text(),'Free: Debian, CentOS, CoreOS, Ubuntu')]");
+            By.xpath("//md-option[@value='free']/div");
     private final By provisioningModelSelection =
             By.xpath("//md-option/div[contains(text(),'Regular')]");
     private final By seriesSelection =
@@ -59,8 +58,6 @@ public class GoogleCloudPrisingCalculatorPage extends BaseUtils{
     private final By committedUsageSelector=
             By.xpath("//md-option[@ng-value='1' and @id = 'select_option_130']/div");
 
-//    private final By numberOfInstancesResult=
-//            By.xpath("//span[@class='ng-binding ng-scope']");
     private final By regionResult=
             By.xpath("//div[@class='md-list-item-text ng-binding' " +
                     "and contains(text(), 'Region')]");
@@ -73,12 +70,6 @@ public class GoogleCloudPrisingCalculatorPage extends BaseUtils{
     private final By instanceTypeResult=
             By.xpath("//div[contains(@class, 'md-list-item-text ng-binding')" +
                     " and contains(text(), 'Instance type')]");
-//    private final By operatingSystemResult=
-//            By.xpath("//div[contains(@class, 'md-list-item-text') " +
-//                    "and contains(text(), 'Operating')]");
-//    private final By gpuResult=
-//            By.xpath("//div[contains(@class, 'md-list-item-text') " +
-//                    "and contains(text(), 'GPU')]");
     private final By ssdResult=
             By.xpath("//div[contains(@class, 'md-list-item-text') " +
                     "and contains(text(), 'SSD')]");
@@ -106,7 +97,7 @@ public class GoogleCloudPrisingCalculatorPage extends BaseUtils{
     }
     public void chooseOS() {
         operatingSystemContainer.click();
-        new WebDriverWait(driver, Duration.ofSeconds(15))
+        new WebDriverWait(driver, Duration.ofSeconds(40))
                 .until(ExpectedConditions.elementToBeClickable(operatingSystemSelection)).click();
     }
     public void chooseVMClass() {

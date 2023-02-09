@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 
@@ -17,7 +18,7 @@ public class YopMailHomePage extends BaseUtils {
     }
     public void openPage() {
         driver.get(prop.getProperty("yopMailUrl"));
-        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
     }
     public void generateNewEmail() {
         randomEmailGeneratorButton.click();

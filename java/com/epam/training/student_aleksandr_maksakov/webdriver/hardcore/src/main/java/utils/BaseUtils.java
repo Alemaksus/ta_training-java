@@ -11,12 +11,10 @@ import org.testng.annotations.BeforeClass;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class BaseUtils {
-    public static long PAGE_LOAD_TIMEOUT = 30;
-    public static long IMPLICIT_WAIT = 30;
     public static WebDriver driver;
     public static Properties prop;
 
@@ -57,8 +55,8 @@ public class BaseUtils {
             driver = new FirefoxDriver();
         }
         driver.manage().window().minimize();
-        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
     @AfterClass(alwaysRun = true)
     public void tearDown() {

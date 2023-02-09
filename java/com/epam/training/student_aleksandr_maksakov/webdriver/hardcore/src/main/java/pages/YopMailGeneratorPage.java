@@ -24,8 +24,8 @@ public class YopMailGeneratorPage extends BaseUtils {
         PageFactory.initElements(driver, this);
     }
     public void copyGeneratedEmail() {
-        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
-        new WebDriverWait(driver, Duration.ofSeconds(20))
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.elementToBeClickable(copyEmailButton)).click();
         pageBody.sendKeys(Keys.CONTROL + "T");
     }

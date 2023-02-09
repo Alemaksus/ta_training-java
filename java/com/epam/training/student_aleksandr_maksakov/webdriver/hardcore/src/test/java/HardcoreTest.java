@@ -2,12 +2,11 @@ import utils.BaseUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
-
 import java.util.Objects;
 
 public class HardcoreTest extends BaseUtils {
     @Test (description = "Home page opened", priority = 1)
-    public void homePageOpened() {
+    public void homePageOpened() throws InterruptedException {
         new GoogleCloudHomePage().openPage();
     }
     @Test (description = "Text inserted into search and pressed Enter", priority = 2)
@@ -66,7 +65,6 @@ public class HardcoreTest extends BaseUtils {
     @Test(description = "Compare results from the mail", priority = 19)
     public void compareResults() throws InterruptedException {
         while (Objects.equals(new YopMailInboxPage().getMailCount(), "0 mail")){
-            Thread.sleep(2000);
             new YopMailInboxPage().refreshPage();
         }
         String MailResult = new YopMailInboxPage().getEmailText();
