@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 public class GoogleCloudHomePage extends BaseUtils {
     @FindBy(xpath = "//input[contains(@class, 'devsite-search-field')]")
@@ -23,7 +23,7 @@ public class GoogleCloudHomePage extends BaseUtils {
     public void openPage() throws InterruptedException {
         driver.get(prop.getProperty("googleCloudURL"));
         //Thread.sleep(5000);
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
     }
     public void inputSearch() {
         searchButton.click();
