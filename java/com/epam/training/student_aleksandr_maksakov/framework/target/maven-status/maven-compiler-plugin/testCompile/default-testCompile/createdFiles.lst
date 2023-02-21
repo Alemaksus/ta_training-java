@@ -1,0 +1,15 @@
+test\HardcoreTest.class
+page\YopMailInboxPage.class
+test\CommonConditions.class
+page\GoogleCloudSearchResultsPage.class
+page\YopMailHomePage.class
+page\GoogleCloudPrisingCalculatorPage.class
+util\TestListener.class
+service\VMCreator.class
+service\TestDataReader.class
+page\GoogleCloudHomePage.class
+util\BrowserManipulation.class
+driver\DriverSingleton.class
+page\AbstractPage.class
+page\YopMailGeneratorPage.class
+model\VirtualMachine.class
