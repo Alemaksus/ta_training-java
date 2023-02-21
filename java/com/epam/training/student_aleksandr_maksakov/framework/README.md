@@ -2,4 +2,4 @@ Framework for Test Automation Google Cloud Platform Pricing Calculator (https://
 =================
 
 Run from command line:
-mvn -Dbrowser=chrome -Dsurefire="src\test\resources\testng-smoke.xml" -Denvironment=all clean test
+mvn -Dbrowser=chrome -Dsurefire="src\test\resources\testng-smoke.xml" -Denvironment=dev clean test
