@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class YopMailHomePage extends BaseUtils {
-    @FindBy(xpath = "//a[@href='email-generator']")
+    @FindBy(xpath = "//h3[contains(text(), 'Random Email')]")
     public WebElement randomEmailGeneratorButton;
     public YopMailHomePage() {
         PageFactory.initElements(driver, this);
