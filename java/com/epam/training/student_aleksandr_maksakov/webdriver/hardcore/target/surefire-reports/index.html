@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 11 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-HardcoreTest" class="navigator-link">
+              <span class="suite-name border-failed">HardcoreTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-HardcoreTest" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-HardcoreTest" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-HardcoreTest" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-HardcoreTest" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-HardcoreTest" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-HardcoreTest" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-HardcoreTest" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods, 11 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-HardcoreTest" class="hide-methods failed suite-HardcoreTest"> (hide)</a> <!-- hide-methods failed suite-HardcoreTest -->
+                      <a href="#" panel-name="suite-HardcoreTest" class="show-methods failed suite-HardcoreTest"> (show)</a> <!-- show-methods failed suite-HardcoreTest -->
+                    </span>
+                    <div class="method-list-content failed suite-HardcoreTest">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="addGpu">addGpu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="chooseCommittedUsage">chooseCommittedUsage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="chooseLocation">chooseLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="chooseSeries">chooseSeries</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="chooseSsd">chooseSsd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="clickAddToEstimateButton">clickAddToEstimateButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="clickEmailButton">clickEmailButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="compareResults">compareResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="inputEmail">inputEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="instanceTypeChosen">instanceTypeChosen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="sendEmail">sendEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-HardcoreTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-HardcoreTest" class="hide-methods passed suite-HardcoreTest"> (hide)</a> <!-- hide-methods passed suite-HardcoreTest -->
+                      <a href="#" panel-name="suite-HardcoreTest" class="show-methods passed suite-HardcoreTest"> (show)</a> <!-- show-methods passed suite-HardcoreTest -->
+                    </span>
+                    <div class="method-list-content passed suite-HardcoreTest">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="checkEmail">checkEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="chooseOs">chooseOs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="chooseVmClass">chooseVmClass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="getGeneratedEmail">getGeneratedEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="homePageOpened">homePageOpened</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="inputNumberOfInstances">inputNumberOfInstances</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="selectResultInSearchPage">selectResultInSearchPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HardcoreTest" title="HardcoreTest" class="method navigator-link" hash-for-method="textInput">textInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-HardcoreTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-HardcoreTest" class="panel HardcoreTest">
+          <div class="suite-HardcoreTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">HardcoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addGpu">
+                  </a> <!-- addGpu -->
+                  <span class="method-name">addGpu</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //md-select[@ng-model=&apos;listingCtrl.computeServer.gpuType&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.addGpus(GoogleCloudPrisingCalculatorPage.java:124)
+	at HardcoreTest.addGpu(HardcoreTest.java:30)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Add GPU)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chooseCommittedUsage">
+                  </a> <!-- chooseCommittedUsage -->
+                  <span class="method-name">chooseCommittedUsage</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;md-select placeholder=&quot;Committed usage&quot; ng-disabled=&quot;listingCtrl.isCudDisabled&quot; ng-change=&quot;listingCtrl.onCudChange(&apos;computeServer&apos;);&quot; ng-model=&quot;listingCtrl.computeServer.cud&quot; class=&quot;ng-pristine ng-untouched ng-valid ng-not-empty&quot; tabindex=&quot;0&quot; role=&quot;listbox&quot; aria-expanded=&quot;false&quot; aria-multiselectable=&quot;false&quot; id=&quot;select_132&quot; aria-owns=&quot;select_container_133&quot; aria-disabled=&quot;false&quot; aria-invalid=&quot;false&quot; aria-label=&quot;Committed usage: None&quot;&gt;...&lt;/md-select&gt; is not clickable at point (360, 1286). Other element would receive the click: &lt;md-backdrop class=&quot;md-select-backdrop md-click-catcher ng-scope&quot; style=&quot;height: 3900px;&quot;&gt;&lt;/md-backdrop&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, clickElement {id=6ebc31f7-5ba9-4271-9253-54356dff6f80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6e170f0fc8ab3352fc0098c3db2ba74)] -&gt; xpath: //md-select[@ng-model=&apos;listingCtrl.computeServer.cud&apos;]]
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseCommittedUsage(GoogleCloudPrisingCalculatorPage.java:143)
+	at HardcoreTest.chooseCommittedUsage(HardcoreTest.java:36)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Choose committed usage)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chooseLocation">
+                  </a> <!-- chooseLocation -->
+                  <span class="method-name">chooseLocation</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;md-select placeholder=&quot;Datacenter location&quot; ng-model=&quot;listingCtrl.computeServer.location&quot; ng-change=&quot;listingCtrl.onLocationChange(); listingCtrl.persistLocation(&apos;computeServer&apos;); listingCtrl.toggleMemoryExtension();&quot; md-on-close=&quot;listingCtrl.clearRegionText()&quot; md-container-class=&quot;cpc-region-select&quot; class=&quot;ng-pristine ng-untouched ng-valid ng-not-empty&quot; tabindex=&quot;0&quot; aria-disabled=&quot;false&quot; role=&quot;listbox&quot; aria-expanded=&quot;false&quot; aria-multiselectable=&quot;false&quot; id=&quot;select_125&quot; aria-owns=&quot;select_container_126&quot; aria-invalid=&quot;false&quot; aria-label=&quot;Datacenter location: 
+                            Iowa (us-central1)
+                        &quot;&gt;...&lt;/md-select&gt; is not clickable at point (360, 1120). Other element would receive the click: &lt;md-backdrop class=&quot;md-select-backdrop md-click-catcher ng-scope&quot; style=&quot;height: 3900px;&quot;&gt;&lt;/md-backdrop&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, clickElement {id=2a4da2d9-4eb9-42ed-b05f-03c7dde474cb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6e170f0fc8ab3352fc0098c3db2ba74)] -&gt; xpath: //md-select[@ng-model=&apos;listingCtrl.computeServer.location&apos;]]
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseDatabaseLocation(GoogleCloudPrisingCalculatorPage.java:138)
+	at HardcoreTest.chooseLocation(HardcoreTest.java:34)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Choose location)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chooseSeries">
+                  </a> <!-- chooseSeries -->
+                  <span class="method-name">chooseSeries</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //md-option[@value=&apos;n1&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseSeries(GoogleCloudPrisingCalculatorPage.java:111)
+	at HardcoreTest.chooseSeries(HardcoreTest.java:26)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Series chosen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chooseSsd">
+                  </a> <!-- chooseSsd -->
+                  <span class="method-name">chooseSsd</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //md-option[@ng-repeat=&apos;item in listingCtrl.dynamicSsd.computeServer&apos; and @value = &apos;2&apos;]/div (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseSsd(GoogleCloudPrisingCalculatorPage.java:135)
+	at HardcoreTest.chooseSsd(HardcoreTest.java:32)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Add SSD)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickAddToEstimateButton">
+                  </a> <!-- clickAddToEstimateButton -->
+                  <span class="method-name">clickAddToEstimateButton</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;md-raised md-primary cpc-button md-button md-ink-ripple&quot; type=&quot;button&quot; ng-transclude=&quot;&quot; ng-disabled=&quot;ComputeEngineForm.$invalid || !listingCtrl.machineType[&apos;computeServer&apos;] ||
+                         (listingCtrl.computeServer.series == &apos;a2&apos; &amp;amp;&amp;amp; !listingCtrl.computeServer.gpuType) || (listingCtrl.computeServer.series == &apos;m2&apos; &amp;amp;&amp;amp; listingCtrl.computeServer.class !== &apos;regular&apos;)&quot; ng-click=&quot;listingCtrl.addComputeServer(ComputeEngineForm);&quot; aria-label=&quot;Add to Estimate&quot;&gt;...&lt;/button&gt; is not clickable at point (653, 1446). Other element would receive the click: &lt;md-backdrop class=&quot;md-select-backdrop md-click-catcher ng-scope&quot; style=&quot;height: 3900px;&quot;&gt;&lt;/md-backdrop&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, clickElement {id=dfaf7f23-3c6b-4df0-a948-d9c8d95c5a1f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6e170f0fc8ab3352fc0098c3db2ba74)] -&gt; xpath: //button[@ng-click=&apos;listingCtrl.addComputeServer(ComputeEngineForm);&apos;]]
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.GoogleCloudPrisingCalculatorPage.clickAddToEstimateButton(GoogleCloudPrisingCalculatorPage.java:148)
+	at HardcoreTest.clickAddToEstimateButton(HardcoreTest.java:39)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Click add to Estimate button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickEmailButton">
+                  </a> <!-- clickEmailButton -->
+                  <span class="method-name">clickEmailButton</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[@id=&apos;Email Estimate&apos;]/span (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.clickEmailButton(GoogleCloudPrisingCalculatorPage.java:177)
+	at HardcoreTest.clickEmailButton(HardcoreTest.java:42)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Click Email button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareResults">
+                  </a> <!-- compareResults -->
+                  <span class="method-name">compareResults</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body[contains(@class, &apos;bodymail&apos;)]//h2&quot;}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, findElement {using=xpath, value=//body[contains(@class, &apos;bodymail&apos;)]//h2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at pages.YopMailInboxPage.getEmailText(YopMailInboxPage.java:24)
+	at HardcoreTest.compareResults(HardcoreTest.java:70)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Compare results from the mail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputEmail">
+                  </a> <!-- inputEmail -->
+                  <span class="method-name">inputEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //form[@name=&apos;emailForm&apos;]//input[@ng-model=&apos;emailQuote.user.email&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.inputCopiedEmail(GoogleCloudPrisingCalculatorPage.java:187)
+	at HardcoreTest.inputEmail(HardcoreTest.java:54)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Paste Generated Email to the field)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="instanceTypeChosen">
+                  </a> <!-- instanceTypeChosen -->
+                  <span class="method-name">instanceTypeChosen</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;iframe src=&quot;https://cloud.google.com/frame/products/calculator/index_d6a98ba38837346d20babc06ff2153b68c2990fa24322fe52c5f83ec3a78c6a0.frame?hl=ru&quot; allow=&quot;clipboard-write https://cloud-dot-devsite-v2-prod.appspot.com&quot; allowfullscreen=&quot;&quot; name=&quot;goog_2104496613&quot; cd_frame_id_=&quot;ce2324ae660481d8198ebc8ce40a45a0&quot;&gt;&lt;/iframe&gt; is not clickable at point (672, 15). Other element would receive the click: &lt;nav class=&quot;devsite-tabs-wrapper&quot; aria-label=&quot;Upper tabs&quot; style=&quot;--scroll-animation-duration:250ms; --scroll-offset:0px;&quot;&gt;...&lt;/nav&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, clickElement {id=04493a6b-1baf-4d75-979b-a303aafe2d46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6e170f0fc8ab3352fc0098c3db2ba74)] -&gt; xpath: //label[contains(text(), &apos;Series&apos;)]/following-sibling::md-select]
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseInstanceType(GoogleCloudPrisingCalculatorPage.java:114)
+	at HardcoreTest.instanceTypeChosen(HardcoreTest.java:28)
+... Removed 43 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Choose instance type)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendEmail">
+                  </a> <!-- sendEmail -->
+                  <span class="method-name">sendEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(@class, &apos;cpc-button&apos;) and @aria-label = &apos;Send Email&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.clickSendEmailButton(GoogleCloudPrisingCalculatorPage.java:181)
+	at HardcoreTest.sendEmail(HardcoreTest.java:58)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Click Send Email button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HardcoreTest-class-failed -->
+          <div class="suite-HardcoreTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HardcoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkEmail">
+                  </a> <!-- checkEmail -->
+                  <span class="method-name">checkEmail</span>
+                  <em>
+(Navigate to the Inbox)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chooseOs">
+                  </a> <!-- chooseOs -->
+                  <span class="method-name">chooseOs</span>
+                  <em>
+(OS chosen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chooseVmClass">
+                  </a> <!-- chooseVmClass -->
+                  <span class="method-name">chooseVmClass</span>
+                  <em>
+(VM Class chosen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getGeneratedEmail">
+                  </a> <!-- getGeneratedEmail -->
+                  <span class="method-name">getGeneratedEmail</span>
+                  <em>
+(Copy Generated Email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageOpened">
+                  </a> <!-- homePageOpened -->
+                  <span class="method-name">homePageOpened</span>
+                  <em>
+(Home page opened)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputNumberOfInstances">
+                  </a> <!-- inputNumberOfInstances -->
+                  <span class="method-name">inputNumberOfInstances</span>
+                  <em>
+(Input number of instances)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectResultInSearchPage">
+                  </a> <!-- selectResultInSearchPage -->
+                  <span class="method-name">selectResultInSearchPage</span>
+                  <em>
+(Pricing Calculator search result chosen)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="textInput">
+                  </a> <!-- textInput -->
+                  <span class="method-name">textInput</span>
+                  <em>
+(Text inserted into search and pressed Enter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HardcoreTest-class-passed -->
+        </div> <!-- panel HardcoreTest -->
+        <div panel-name="test-xml-HardcoreTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;HardcoreTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;HardcoreTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- HardcoreTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-HardcoreTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for HardcoreTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-HardcoreTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for HardcoreTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-HardcoreTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for HardcoreTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_HardcoreTest');
+function tableData_HardcoreTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'compareResults')
+data.setCell(0, 2, 'HardcoreTest')
+data.setCell(0, 3, 330500);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'chooseSsd')
+data.setCell(1, 2, 'HardcoreTest')
+data.setCell(1, 3, 60785);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addGpu')
+data.setCell(2, 2, 'HardcoreTest')
+data.setCell(2, 3, 60738);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'inputEmail')
+data.setCell(3, 2, 'HardcoreTest')
+data.setCell(3, 3, 60672);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickEmailButton')
+data.setCell(4, 2, 'HardcoreTest')
+data.setCell(4, 3, 60574);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sendEmail')
+data.setCell(5, 2, 'HardcoreTest')
+data.setCell(5, 3, 60570);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'chooseSeries')
+data.setCell(6, 2, 'HardcoreTest')
+data.setCell(6, 3, 40379);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'homePageOpened')
+data.setCell(7, 2, 'HardcoreTest')
+data.setCell(7, 3, 19173);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'selectResultInSearchPage')
+data.setCell(8, 2, 'HardcoreTest')
+data.setCell(8, 3, 9726);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getGeneratedEmail')
+data.setCell(9, 2, 'HardcoreTest')
+data.setCell(9, 3, 7502);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkEmail')
+data.setCell(10, 2, 'HardcoreTest')
+data.setCell(10, 3, 1712);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'chooseCommittedUsage')
+data.setCell(11, 2, 'HardcoreTest')
+data.setCell(11, 3, 1127);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'chooseLocation')
+data.setCell(12, 2, 'HardcoreTest')
+data.setCell(12, 3, 1126);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'instanceTypeChosen')
+data.setCell(13, 2, 'HardcoreTest')
+data.setCell(13, 3, 1115);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'clickAddToEstimateButton')
+data.setCell(14, 2, 'HardcoreTest')
+data.setCell(14, 3, 1114);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'chooseOs')
+data.setCell(15, 2, 'HardcoreTest')
+data.setCell(15, 3, 838);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'chooseVmClass')
+data.setCell(16, 2, 'HardcoreTest')
+data.setCell(16, 3, 730);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'textInput')
+data.setCell(17, 2, 'HardcoreTest')
+data.setCell(17, 3, 333);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'inputNumberOfInstances')
+data.setCell(18, 2, 'HardcoreTest')
+data.setCell(18, 3, 272);
+window.suiteTableData['HardcoreTest']= { tableData: data, tableDiv: 'times-div-HardcoreTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <div id="times-div-HardcoreTest">
+              </div> <!-- times-div-HardcoreTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-HardcoreTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for HardcoreTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-HardcoreTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-HardcoreTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">HardcoreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">homePageOpened</span>
+                <span class="method-start">4349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">textInput</span>
+                <span class="method-start">23527 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectResultInSearchPage</span>
+                <span class="method-start">23861 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">inputNumberOfInstances</span>
+                <span class="method-start">33588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">chooseOs</span>
+                <span class="method-start">33861 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">chooseVmClass</span>
+                <span class="method-start">34699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">chooseSeries</span>
+                <span class="method-start">35430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">instanceTypeChosen</span>
+                <span class="method-start">75814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addGpu</span>
+                <span class="method-start">76933 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">chooseSsd</span>
+                <span class="method-start">137672 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">chooseLocation</span>
+                <span class="method-start">198459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">chooseCommittedUsage</span>
+                <span class="method-start">199588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickAddToEstimateButton</span>
+                <span class="method-start">200718 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickEmailButton</span>
+                <span class="method-start">201834 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getGeneratedEmail</span>
+                <span class="method-start">262410 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">inputEmail</span>
+                <span class="method-start">269912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sendEmail</span>
+                <span class="method-start">330585 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkEmail</span>
+                <span class="method-start">391156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareResults</span>
+                <span class="method-start">392869 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">723371 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,7 @@
+pages\GoogleCloudSearchResultsPage.class
+pages\YopMailGeneratorPage.class
+utils\BaseUtils.class
+pages\YopMailInboxPage.class
+pages\GoogleCloudHomePage.class
+pages\GoogleCloudPrisingCalculatorPage.class
+pages\YopMailHomePage.class

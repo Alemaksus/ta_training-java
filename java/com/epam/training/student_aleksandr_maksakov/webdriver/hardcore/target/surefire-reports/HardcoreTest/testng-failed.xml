@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HardcoreTest]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="HardcoreTest">
+        <methods>
+          <include name="chooseCommittedUsage"/>
+          <include name="chooseSeries"/>
+          <include name="tearDown"/>
+          <include name="clickAddToEstimateButton"/>
+          <include name="inputEmail"/>
+          <include name="chooseLocation"/>
+          <include name="compareResults"/>
+          <include name="addGpu"/>
+          <include name="clickEmailButton"/>
+          <include name="chooseSsd"/>
+          <include name="sendEmail"/>
+          <include name="instanceTypeChosen"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- HardcoreTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [HardcoreTest] -->

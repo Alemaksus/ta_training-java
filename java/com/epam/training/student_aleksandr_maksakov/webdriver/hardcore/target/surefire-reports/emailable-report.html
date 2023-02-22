@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">HardcoreTest</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">11</td><td class="num">723 740</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">HardcoreTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="11">HardcoreTest</td><td><a href="#m0">addGpu</a></td><td rowspan="1">1676384829380</td><td rowspan="1">60738</td></tr><tr class="failedeven"><td><a href="#m1">chooseCommittedUsage</a></td><td rowspan="1">1676384952035</td><td rowspan="1">1127</td></tr><tr class="failedeven"><td><a href="#m2">chooseLocation</a></td><td rowspan="1">1676384950906</td><td rowspan="1">1126</td></tr><tr class="failedeven"><td><a href="#m3">chooseSeries</a></td><td rowspan="1">1676384787877</td><td rowspan="1">40379</td></tr><tr class="failedeven"><td><a href="#m4">chooseSsd</a></td><td rowspan="1">1676384890119</td><td rowspan="1">60785</td></tr><tr class="failedeven"><td><a href="#m5">clickAddToEstimateButton</a></td><td rowspan="1">1676384953165</td><td rowspan="1">1114</td></tr><tr class="failedeven"><td><a href="#m6">clickEmailButton</a></td><td rowspan="1">1676384954281</td><td rowspan="1">60574</td></tr><tr class="failedeven"><td><a href="#m7">compareResults</a></td><td rowspan="1">1676385145316</td><td rowspan="1">330500</td></tr><tr class="failedeven"><td><a href="#m8">inputEmail</a></td><td rowspan="1">1676385022359</td><td rowspan="1">60672</td></tr><tr class="failedeven"><td><a href="#m9">instanceTypeChosen</a></td><td rowspan="1">1676384828261</td><td rowspan="1">1115</td></tr><tr class="failedeven"><td><a href="#m10">sendEmail</a></td><td rowspan="1">1676385083032</td><td rowspan="1">60570</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">HardcoreTest</td><td><a href="#m11">checkEmail</a></td><td rowspan="1">1676385143603</td><td rowspan="1">1712</td></tr><tr class="passedeven"><td><a href="#m12">chooseOs</a></td><td rowspan="1">1676384786308</td><td rowspan="1">838</td></tr><tr class="passedeven"><td><a href="#m13">chooseVmClass</a></td><td rowspan="1">1676384787146</td><td rowspan="1">730</td></tr><tr class="passedeven"><td><a href="#m14">getGeneratedEmail</a></td><td rowspan="1">1676385014857</td><td rowspan="1">7502</td></tr><tr class="passedeven"><td><a href="#m15">homePageOpened</a></td><td rowspan="1">1676384756796</td><td rowspan="1">19173</td></tr><tr class="passedeven"><td><a href="#m16">inputNumberOfInstances</a></td><td rowspan="1">1676384786035</td><td rowspan="1">272</td></tr><tr class="passedeven"><td><a href="#m17">selectResultInSearchPage</a></td><td rowspan="1">1676384776308</td><td rowspan="1">9726</td></tr><tr class="passedeven"><td><a href="#m18">textInput</a></td><td rowspan="1">1676384775974</td><td rowspan="1">333</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">HardcoreTest#addGpu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //md-select[@ng-model=&apos;listingCtrl.computeServer.gpuType&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.addGpus(GoogleCloudPrisingCalculatorPage.java:124)
+	at HardcoreTest.addGpu(HardcoreTest.java:30)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">HardcoreTest#chooseCommittedUsage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;md-select placeholder=&quot;Committed usage&quot; ng-disabled=&quot;listingCtrl.isCudDisabled&quot; ng-change=&quot;listingCtrl.onCudChange(&apos;computeServer&apos;);&quot; ng-model=&quot;listingCtrl.computeServer.cud&quot; class=&quot;ng-pristine ng-untouched ng-valid ng-not-empty&quot; tabindex=&quot;0&quot; role=&quot;listbox&quot; aria-expanded=&quot;false&quot; aria-multiselectable=&quot;false&quot; id=&quot;select_132&quot; aria-owns=&quot;select_container_133&quot; aria-disabled=&quot;false&quot; aria-invalid=&quot;false&quot; aria-label=&quot;Committed usage: None&quot;&gt;...&lt;/md-select&gt; is not clickable at point (360, 1286). Other element would receive the click: &lt;md-backdrop class=&quot;md-select-backdrop md-click-catcher ng-scope&quot; style=&quot;height: 3900px;&quot;&gt;&lt;/md-backdrop&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, clickElement {id=6ebc31f7-5ba9-4271-9253-54356dff6f80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6e170f0fc8ab3352fc0098c3db2ba74)] -&gt; xpath: //md-select[@ng-model=&apos;listingCtrl.computeServer.cud&apos;]]
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseCommittedUsage(GoogleCloudPrisingCalculatorPage.java:143)
+	at HardcoreTest.chooseCommittedUsage(HardcoreTest.java:36)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">HardcoreTest#chooseLocation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;md-select placeholder=&quot;Datacenter location&quot; ng-model=&quot;listingCtrl.computeServer.location&quot; ng-change=&quot;listingCtrl.onLocationChange(); listingCtrl.persistLocation(&apos;computeServer&apos;); listingCtrl.toggleMemoryExtension();&quot; md-on-close=&quot;listingCtrl.clearRegionText()&quot; md-container-class=&quot;cpc-region-select&quot; class=&quot;ng-pristine ng-untouched ng-valid ng-not-empty&quot; tabindex=&quot;0&quot; aria-disabled=&quot;false&quot; role=&quot;listbox&quot; aria-expanded=&quot;false&quot; aria-multiselectable=&quot;false&quot; id=&quot;select_125&quot; aria-owns=&quot;select_container_126&quot; aria-invalid=&quot;false&quot; aria-label=&quot;Datacenter location: 
+                            Iowa (us-central1)
+                        &quot;&gt;...&lt;/md-select&gt; is not clickable at point (360, 1120). Other element would receive the click: &lt;md-backdrop class=&quot;md-select-backdrop md-click-catcher ng-scope&quot; style=&quot;height: 3900px;&quot;&gt;&lt;/md-backdrop&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, clickElement {id=2a4da2d9-4eb9-42ed-b05f-03c7dde474cb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6e170f0fc8ab3352fc0098c3db2ba74)] -&gt; xpath: //md-select[@ng-model=&apos;listingCtrl.computeServer.location&apos;]]
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseDatabaseLocation(GoogleCloudPrisingCalculatorPage.java:138)
+	at HardcoreTest.chooseLocation(HardcoreTest.java:34)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">HardcoreTest#chooseSeries</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //md-option[@value=&apos;n1&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseSeries(GoogleCloudPrisingCalculatorPage.java:111)
+	at HardcoreTest.chooseSeries(HardcoreTest.java:26)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">HardcoreTest#chooseSsd</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //md-option[@ng-repeat=&apos;item in listingCtrl.dynamicSsd.computeServer&apos; and @value = &apos;2&apos;]/div (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseSsd(GoogleCloudPrisingCalculatorPage.java:135)
+	at HardcoreTest.chooseSsd(HardcoreTest.java:32)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">HardcoreTest#clickAddToEstimateButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;md-raised md-primary cpc-button md-button md-ink-ripple&quot; type=&quot;button&quot; ng-transclude=&quot;&quot; ng-disabled=&quot;ComputeEngineForm.$invalid || !listingCtrl.machineType[&apos;computeServer&apos;] ||
+                         (listingCtrl.computeServer.series == &apos;a2&apos; &amp;amp;&amp;amp; !listingCtrl.computeServer.gpuType) || (listingCtrl.computeServer.series == &apos;m2&apos; &amp;amp;&amp;amp; listingCtrl.computeServer.class !== &apos;regular&apos;)&quot; ng-click=&quot;listingCtrl.addComputeServer(ComputeEngineForm);&quot; aria-label=&quot;Add to Estimate&quot;&gt;...&lt;/button&gt; is not clickable at point (653, 1446). Other element would receive the click: &lt;md-backdrop class=&quot;md-select-backdrop md-click-catcher ng-scope&quot; style=&quot;height: 3900px;&quot;&gt;&lt;/md-backdrop&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, clickElement {id=dfaf7f23-3c6b-4df0-a948-d9c8d95c5a1f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6e170f0fc8ab3352fc0098c3db2ba74)] -&gt; xpath: //button[@ng-click=&apos;listingCtrl.addComputeServer(ComputeEngineForm);&apos;]]
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.GoogleCloudPrisingCalculatorPage.clickAddToEstimateButton(GoogleCloudPrisingCalculatorPage.java:148)
+	at HardcoreTest.clickAddToEstimateButton(HardcoreTest.java:39)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">HardcoreTest#clickEmailButton</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[@id=&apos;Email Estimate&apos;]/span (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.clickEmailButton(GoogleCloudPrisingCalculatorPage.java:177)
+	at HardcoreTest.clickEmailButton(HardcoreTest.java:42)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">HardcoreTest#compareResults</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//body[contains(@class, &apos;bodymail&apos;)]//h2&quot;}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, findElement {using=xpath, value=//body[contains(@class, &apos;bodymail&apos;)]//h2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at pages.YopMailInboxPage.getEmailText(YopMailInboxPage.java:24)
+	at HardcoreTest.compareResults(HardcoreTest.java:70)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">HardcoreTest#inputEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //form[@name=&apos;emailForm&apos;]//input[@ng-model=&apos;emailQuote.user.email&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.inputCopiedEmail(GoogleCloudPrisingCalculatorPage.java:187)
+	at HardcoreTest.inputEmail(HardcoreTest.java:54)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">HardcoreTest#instanceTypeChosen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;iframe src=&quot;https://cloud.google.com/frame/products/calculator/index_d6a98ba38837346d20babc06ff2153b68c2990fa24322fe52c5f83ec3a78c6a0.frame?hl=ru&quot; allow=&quot;clipboard-write https://cloud-dot-devsite-v2-prod.appspot.com&quot; allowfullscreen=&quot;&quot; name=&quot;goog_2104496613&quot; cd_frame_id_=&quot;ce2324ae660481d8198ebc8ce40a45a0&quot;&gt;&lt;/iframe&gt; is not clickable at point (672, 15). Other element would receive the click: &lt;nav class=&quot;devsite-tabs-wrapper&quot; aria-label=&quot;Upper tabs&quot; style=&quot;--scroll-animation-duration:250ms; --scroll-offset:0px;&quot;&gt;...&lt;/nav&gt;
+  (Session info: chrome=110.0.5481.77)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6e170f0fc8ab3352fc0098c3db2ba74, clickElement {id=04493a6b-1baf-4d75-979b-a303aafe2d46}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f6e170f0fc8ab3352fc0098c3db2ba74)] -&gt; xpath: //label[contains(text(), &apos;Series&apos;)]/following-sibling::md-select]
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at pages.GoogleCloudPrisingCalculatorPage.chooseInstanceType(GoogleCloudPrisingCalculatorPage.java:114)
+	at HardcoreTest.instanceTypeChosen(HardcoreTest.java:28)
+... Removed 43 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">HardcoreTest#sendEmail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(@class, &apos;cpc-button&apos;) and @aria-label = &apos;Send Email&apos;] (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\alexa\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56056}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56056/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6e170f0fc8ab3352fc0098c3db2ba74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at pages.GoogleCloudPrisingCalculatorPage.clickSendEmailButton(GoogleCloudPrisingCalculatorPage.java:181)
+	at HardcoreTest.sendEmail(HardcoreTest.java:58)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">HardcoreTest#checkEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">HardcoreTest#chooseOs</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">HardcoreTest#chooseVmClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">HardcoreTest#getGeneratedEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">HardcoreTest#homePageOpened</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">HardcoreTest#inputNumberOfInstances</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">HardcoreTest#selectResultInSearchPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">HardcoreTest#textInput</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
