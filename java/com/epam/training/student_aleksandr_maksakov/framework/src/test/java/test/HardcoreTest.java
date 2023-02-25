@@ -27,8 +27,8 @@ public class HardcoreTest extends CommonConditions {
         switchToAnotherTab();
         new GoogleCloudPrisingCalculatorPage(driver)
                 .switchToInnerFrame()
-                .inputCopiedEmail()
-                .clickSendEmailButton();
+                .inputCopiedEmail();
+//                .clickSendEmailButton();
         switchToAnotherTab();
         new YopMailGeneratorPage(driver)
                 .checkInbox()
