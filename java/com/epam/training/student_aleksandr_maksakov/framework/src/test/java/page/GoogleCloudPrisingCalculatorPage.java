@@ -58,8 +58,9 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
                     "and contains(text(), 'Total Estimated Cost')]");
     private final By emailButton=
             By.xpath("//button[@id='Email Estimate']");
+
     private final By sendEmailButton=
-            By.xpath("//button[contains(@class, 'md-raised') and @aria-label='Send Email']");
+            By.xpath("//button[@aria-label='Send Email']");
     //button[contains(@class, 'cpc-button') and @aria-label='Send Email']
     private final By emailField=
             By.xpath("//form[@name='emailForm']//input[@ng-model='emailQuote.user.email']");
