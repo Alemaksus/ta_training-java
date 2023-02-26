@@ -3,6 +3,7 @@ page\YopMailInboxPage.class
 test\CommonConditions.class
 page\GoogleCloudSearchResultsPage.class
 page\YopMailHomePage.class
+test\HurtMePlentyTest.class
 page\GoogleCloudPrisingCalculatorPage.class
 util\TestListener.class
 service\VMCreator.class

@@ -1,14 +1,14 @@
-2023-02-25 19:50:30,501 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
-2023-02-25 19:50:30,509 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
-2023-02-25 19:50:30,509 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
-2023-02-25 19:50:30,512 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@45673f68
-2023-02-25 19:50:30,527 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
-2023-02-25 19:50:30,527 DEBUG internal.PlatformDependent0 [main] Java version: 17
-2023-02-25 19:50:30,530 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
-2023-02-25 19:50:30,531 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
-2023-02-25 19:50:30,531 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
-2023-02-25 19:50:30,532 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
-2023-02-25 19:50:30,533 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
+2023-02-26 11:26:28,340 DEBUG logging.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-02-26 11:26:28,346 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-02-26 11:26:28,346 DEBUG util.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-02-26 11:26:28,349 DEBUG util.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@45673f68
+2023-02-26 11:26:28,362 DEBUG internal.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-02-26 11:26:28,362 DEBUG internal.PlatformDependent0 [main] Java version: 17
+2023-02-26 11:26:28,367 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-02-26 11:26:28,369 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-02-26 11:26:28,371 DEBUG internal.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-02-26 11:26:28,373 DEBUG internal.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-02-26 11:26:28,375 DEBUG internal.PlatformDependent0 [main] direct buffer constructor: unavailable
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.84.Final.jar:4.1.84.Final]
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:94) ~[selenium-chrome-driver-4.7.2.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82) ~[selenium-chrome-driver-4.7.2.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50) ~[selenium-chrome-driver-4.7.2.jar:?]
-	at driver.DriverSingleton.getDriver(DriverSingleton.java:23) ~[test-classes/:?]
+	at driver.DriverSingleton.getDriver(DriverSingleton.java:26) ~[test-classes/:?]
 	at test.CommonConditions.setUp(CommonConditions.java:31) ~[test-classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
@@ -66,8 +66,8 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.0.0-M5.jar:3.0.0-M5]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562) ~[surefire-booter-3.0.0-M5.jar:3.0.0-M5]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548) ~[surefire-booter-3.0.0-M5.jar:3.0.0-M5]
-2023-02-25 19:50:30,538 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
-2023-02-25 19:50:30,540 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+2023-02-26 11:26:28,384 DEBUG internal.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-02-26 11:26:28,385 DEBUG internal.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @c8e4bb0
 	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
@@ -95,7 +95,7 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:94) ~[selenium-chrome-driver-4.7.2.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82) ~[selenium-chrome-driver-4.7.2.jar:?]
 	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50) ~[selenium-chrome-driver-4.7.2.jar:?]
-	at driver.DriverSingleton.getDriver(DriverSingleton.java:23) ~[test-classes/:?]
+	at driver.DriverSingleton.getDriver(DriverSingleton.java:26) ~[test-classes/:?]
 	at test.CommonConditions.setUp(CommonConditions.java:31) ~[test-classes/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
@@ -127,68 +127,68 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.0.0-M5.jar:3.0.0-M5]
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562) ~[surefire-booter-3.0.0-M5.jar:3.0.0-M5]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548) ~[surefire-booter-3.0.0-M5.jar:3.0.0-M5]
-2023-02-25 19:50:30,542 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
-2023-02-25 19:50:30,542 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
-2023-02-25 19:50:30,543 DEBUG internal.PlatformDependent [main] maxDirectMemory: 4242538496 bytes (maybe)
-2023-02-25 19:50:30,543 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\alexa\AppData\Local\Temp (java.io.tmpdir)
-2023-02-25 19:50:30,543 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2023-02-25 19:50:30,543 DEBUG internal.PlatformDependent [main] Platform: Windows
-2023-02-25 19:50:30,544 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
-2023-02-25 19:50:30,544 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2023-02-25 19:50:30,546 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
-2023-02-25 19:50:30,546 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
-2023-02-25 19:50:30,553 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
-2023-02-25 19:50:30,567 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2023-02-25 19:50:30,567 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2023-02-25 19:50:30,603 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2023-02-25 19:50:30,604 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2023-02-25 19:50:30,623 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 16
-2023-02-25 19:50:30,634 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
-2023-02-25 19:50:30,634 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
-2023-02-25 19:50:30,650 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@47e4d9d0
-2023-02-25 19:50:30,652 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@545607f2
-2023-02-25 19:50:30,655 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@39109136
-2023-02-25 19:50:30,657 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@27c04377
-2023-02-25 19:50:30,658 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@34dc85a
-2023-02-25 19:50:30,660 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@67403656
-2023-02-25 19:50:30,661 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5a6482a9
-2023-02-25 19:50:30,662 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7f9ab969
-2023-02-25 19:50:30,664 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@12f8b1d8
-2023-02-25 19:50:30,666 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@746cd757
-2023-02-25 19:50:30,667 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@ae372b9
-2023-02-25 19:50:30,669 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2098d37d
-2023-02-25 19:50:30,670 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@77b9d0c7
-2023-02-25 19:50:30,671 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@65fd6708
-2023-02-25 19:50:30,672 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@749ab7b4
-2023-02-25 19:50:30,673 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@127f9161
-2023-02-25 19:50:30,690 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 16
-2023-02-25 19:50:30,690 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 16
-2023-02-25 19:50:30,690 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
-2023-02-25 19:50:30,691 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
-2023-02-25 19:50:30,691 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
-2023-02-25 19:50:30,691 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
-2023-02-25 19:50:30,691 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
-2023-02-25 19:50:30,692 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2023-02-25 19:50:30,692 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
-2023-02-25 19:50:30,692 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2023-02-25 19:50:30,692 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
-2023-02-25 19:50:30,692 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2023-02-25 19:50:30,700 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
-2023-02-25 19:50:30,700 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
-2023-02-25 19:50:30,701 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2023-02-25 19:50:31,073 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 22320 (auto-detected)
-2023-02-25 19:50:31,077 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
-2023-02-25 19:50:31,077 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
-2023-02-25 19:50:31,084 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-2023-02-25 19:50:31,086 DEBUG util.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-2023-02-25 19:50:31,121 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 40:ec:99:ff:fe:cb:a7:00 (auto-detected)
-2023-02-25 19:50:31,162 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
-2023-02-25 19:50:31,163 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
-2023-02-25 19:50:31,163 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@9c44156
-2023-02-25 19:50:31,193 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
-2023-02-25 19:50:31,193 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
-2023-02-25 19:50:31,193 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
-2023-02-25 19:50:31,193 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
-2023-02-25 19:50:31,873 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
-2023-02-25 19:50:32,029 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0xcb96a93f1009ccf4
-2023-02-25 19:51:16,892 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
+2023-02-26 11:26:28,388 DEBUG internal.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-02-26 11:26:28,388 DEBUG internal.PlatformDependent [main] sun.misc.Unsafe: available
+2023-02-26 11:26:28,388 DEBUG internal.PlatformDependent [main] maxDirectMemory: 4242538496 bytes (maybe)
+2023-02-26 11:26:28,389 DEBUG internal.PlatformDependent [main] -Dio.netty.tmpdir: C:\Users\alexa\AppData\Local\Temp (java.io.tmpdir)
+2023-02-26 11:26:28,389 DEBUG internal.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-02-26 11:26:28,389 DEBUG internal.PlatformDependent [main] Platform: Windows
+2023-02-26 11:26:28,390 DEBUG internal.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-02-26 11:26:28,390 DEBUG internal.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-02-26 11:26:28,391 DEBUG internal.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-02-26 11:26:28,392 DEBUG internal.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-02-26 11:26:28,398 DEBUG internal.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-02-26 11:26:28,413 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-02-26 11:26:28,414 DEBUG internal.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-02-26 11:26:28,449 DEBUG ssl.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-02-26 11:26:28,449 DEBUG ssl.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-02-26 11:26:28,469 DEBUG channel.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 16
+2023-02-26 11:26:28,474 DEBUG nio.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-02-26 11:26:28,475 DEBUG nio.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-02-26 11:26:28,489 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@47e4d9d0
+2023-02-26 11:26:28,490 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@545607f2
+2023-02-26 11:26:28,491 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@39109136
+2023-02-26 11:26:28,494 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@27c04377
+2023-02-26 11:26:28,496 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@34dc85a
+2023-02-26 11:26:28,496 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@67403656
+2023-02-26 11:26:28,497 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5a6482a9
+2023-02-26 11:26:28,498 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7f9ab969
+2023-02-26 11:26:28,499 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@12f8b1d8
+2023-02-26 11:26:28,500 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@746cd757
+2023-02-26 11:26:28,501 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@ae372b9
+2023-02-26 11:26:28,502 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2098d37d
+2023-02-26 11:26:28,503 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@77b9d0c7
+2023-02-26 11:26:28,504 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@65fd6708
+2023-02-26 11:26:28,505 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@749ab7b4
+2023-02-26 11:26:28,506 TRACE nio.NioEventLoop [main] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@127f9161
+2023-02-26 11:26:28,522 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 16
+2023-02-26 11:26:28,522 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 16
+2023-02-26 11:26:28,522 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-02-26 11:26:28,522 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-02-26 11:26:28,522 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-02-26 11:26:28,522 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-02-26 11:26:28,523 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-02-26 11:26:28,523 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-02-26 11:26:28,523 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-02-26 11:26:28,523 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-02-26 11:26:28,523 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-02-26 11:26:28,524 DEBUG buffer.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-02-26 11:26:28,532 DEBUG buffer.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-02-26 11:26:28,532 DEBUG buffer.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-02-26 11:26:28,532 DEBUG buffer.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-02-26 11:26:28,850 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 17984 (auto-detected)
+2023-02-26 11:26:28,851 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-02-26 11:26:28,852 DEBUG util.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-02-26 11:26:28,860 DEBUG util.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2023-02-26 11:26:28,861 DEBUG util.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2023-02-26 11:26:28,891 DEBUG channel.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: 40:ec:99:ff:fe:cb:a7:00 (auto-detected)
+2023-02-26 11:26:28,928 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-02-26 11:26:28,930 DEBUG buffer.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-02-26 11:26:28,930 DEBUG util.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@10b6414f
+2023-02-26 11:26:28,953 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-02-26 11:26:28,953 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-02-26 11:26:28,954 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-02-26 11:26:28,954 DEBUG util.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-02-26 11:26:29,523 DEBUG compression.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-02-26 11:26:29,651 DEBUG internal.ThreadLocalRandom [main] -Dio.netty.initialSeedUniquifier: 0x042028300ef337df
+2023-02-26 11:26:30,015 TRACE websocketx.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
