@@ -30,6 +30,7 @@ public class DriverSingleton {
             driver.manage().window().setSize(new Dimension(1900, 1000));
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
         }
         return driver;
     }
