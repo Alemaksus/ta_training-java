@@ -186,9 +186,7 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
 //                        "/div[@value='" + VM.getDatabaseLocation() + "']");
 
         databaseLocationContainer.click();
-//        JavascriptExecutor executor = (JavascriptExecutor) driver;
-//        WebElement element = driver.findElement(databaseLocationSelector);
-//        executor.executeScript("arguments[0].scrollIntoView();", element);
+
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(databaseLocationSelector)).click();
         return this;
@@ -241,6 +239,14 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
     }
 
     public GoogleCloudPrisingCalculatorPage clickSendEmailButton() {
+
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("window.scrollBy(0,250)", "");
+//        WebElement element = driver.findElement(sendEmailButton);
+//        new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
+//                .until(ExpectedConditions.elementToBeClickable(element));
+//        executor.executeScript("arguments[0].scrollIntoView();", element);
+
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(sendEmailButton)).click();
         return this;
