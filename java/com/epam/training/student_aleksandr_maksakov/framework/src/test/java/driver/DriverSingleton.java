@@ -10,6 +10,8 @@ import java.time.Duration;
 public class DriverSingleton {
 
     private static WebDriver driver;
+    public static long PAGE_LOAD_TIMEOUT = 30;
+    public static long IMPLICIT_WAIT = 30;
 
 
     private DriverSingleton(){}
@@ -17,7 +19,7 @@ public class DriverSingleton {
     public static WebDriver getDriver(){
         if (null == driver){
             switch (System.getProperty("browser")){
-                case "ff": {
+                case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
@@ -27,7 +29,7 @@ public class DriverSingleton {
                     driver = new ChromeDriver();
                 }
             }
-            driver.manage().window().setSize(new Dimension(1900, 1000));
+            driver.manage().window().maximize();
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 

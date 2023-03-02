@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-
+import org.openqa.selenium.JavascriptExecutor;
 public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
 
     @FindBy(xpath = "//label[contains(text(), 'Number of instances')]/following-sibling::input")
@@ -23,7 +23,9 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
     public WebElement seriesContainer;
     @FindBy(xpath = "//label[contains(text(), 'Machine type')]/following-sibling::md-select")
     public WebElement machineTypeContainer;
-    @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.location']")
+
+    @FindBy(xpath = "//md-select[@id='select_127']")
+    //    @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.location']")
     public WebElement databaseLocationContainer;
     @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.cud']")
     public WebElement committedUsageContainer;
@@ -58,10 +60,8 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
                     "and contains(text(), 'Total Estimated Cost')]");
     private final By emailButton=
             By.xpath("//button[@id='Email Estimate']");
-
     private final By sendEmailButton=
-            By.xpath("//button[@aria-label='Send Email']");
-    //button[contains(@class, 'cpc-button') and @aria-label='Send Email']
+            By.xpath("//form[@name='emailForm']//button[contains(@class,'cpc-button')]");
     private final By emailField=
             By.xpath("//form[@name='emailForm']//input[@ng-model='emailQuote.user.email']");
     private final By mainIframe=
@@ -131,7 +131,7 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
 
     public GoogleCloudPrisingCalculatorPage addGpus(VirtualMachine VM) {
 
-        final By gpuTypeSelector =
+        final By gpuTypeSelector=
                 By.xpath("//md-option[@value='" + VM.getTypeOfGPUs() + "']");
         final By gpuCountSelector=
                 By.xpath("//md-option[contains(@ng-repeat, 'listingCtrl.supportedGpuNumbers')]" +
@@ -161,23 +161,43 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
         return this;
     }
 
+//    public GoogleCloudPrisingCalculatorPage chooseDatabaseLocation(VirtualMachine VM) {
+//        final By databaseLocationSelector=
+//                By.xpath("//md-option[@region-option and @value='" + VM.getDatabaseLocation() +
+//                        "' and @id='select_option_230']/div");
+//
+//        databaseLocationContainer.click();
+//        JavascriptExecutor executor = (JavascriptExecutor) driver;
+//        WebElement element = driver.findElement(databaseLocationSelector);
+//        executor.executeScript("arguments[0].scrollIntoView();", element);
+//        new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
+//                .until(ExpectedConditions.elementToBeClickable(databaseLocationSelector)).click();
+//        return this;
+//    }
+
     public GoogleCloudPrisingCalculatorPage chooseDatabaseLocation(VirtualMachine VM) {
 
         final By databaseLocationSelector=
-                By.xpath("//md-option[@region-option and @value='" + VM.getDatabaseLocation() +
-                        "' and @id='select_option_230']/div");
+                By.xpath("//md-option[@id='select_option_232' and " +
+                        "@value='" + VM.getDatabaseLocation() + "']/div");
+
+//        final By databaseLocationSelector=
+//                By.xpath("//*[@id='select_value_label_92']/span[1]" +
+//                        "/div[@value='" + VM.getDatabaseLocation() + "']");
 
         databaseLocationContainer.click();
+//        JavascriptExecutor executor = (JavascriptExecutor) driver;
+//        WebElement element = driver.findElement(databaseLocationSelector);
+//        executor.executeScript("arguments[0].scrollIntoView();", element);
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(databaseLocationSelector)).click();
         return this;
     }
 
     public GoogleCloudPrisingCalculatorPage chooseCommittedUsage(VirtualMachine VM) {
-
         final By committedUsageSelector=
                 By.xpath("//md-option[@value='" + VM.getCommittedUsage() + "' " +
-                        "and @id = 'select_option_130']/div");
+                        "and @id = 'select_option_132']/div");
 
         committedUsageContainer.click();
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))

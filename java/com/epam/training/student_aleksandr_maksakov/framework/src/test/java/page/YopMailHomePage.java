@@ -5,8 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 public class YopMailHomePage extends AbstractPage {
     @FindBy(xpath = "//h3[contains(text(), 'Random Email')]")
@@ -19,7 +18,7 @@ public class YopMailHomePage extends AbstractPage {
 
     public YopMailHomePage openPage() {
         driver.get(TestDataReader.getTestData("yopMailUrl"));
-        driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         return this;
     }
 
