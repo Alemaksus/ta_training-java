@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-03T12:19:57 AMT" name="Smoke" finished-at="2023-03-03T12:20:45 AMT" duration-ms="48094">
+  <suite started-at="2023-03-03T12:39:36 AMT" name="Smoke" finished-at="2023-03-03T12:40:31 AMT" duration-ms="54574">
     <groups>
     </groups>
-    <test started-at="2023-03-03T12:19:57 AMT" name="Virtual Machine" finished-at="2023-03-03T12:20:45 AMT" duration-ms="48094">
+    <test started-at="2023-03-03T12:39:36 AMT" name="Virtual Machine" finished-at="2023-03-03T12:40:31 AMT" duration-ms="54574">
       <class name="test.HardcoreTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.HardcoreTest@3bd40a57]" started-at="2023-03-03T12:19:57 AMT" name="setUp" finished-at="2023-03-03T12:20:00 AMT" duration-ms="2715" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.HardcoreTest@3bd40a57]" started-at="2023-03-03T12:39:36 AMT" name="setUp" finished-at="2023-03-03T12:39:38 AMT" duration-ms="2346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="compareEmailResultWithCalculator()[pri:0, instance:test.HardcoreTest@3bd40a57]" started-at="2023-03-03T12:20:00 AMT" name="compareEmailResultWithCalculator" description="Email result matches Google calculator" finished-at="2023-03-03T12:20:44 AMT" duration-ms="44280" status="PASS">
+        <test-method signature="compareEmailResultWithCalculator()[pri:0, instance:test.HardcoreTest@3bd40a57]" started-at="2023-03-03T12:39:38 AMT" name="compareEmailResultWithCalculator" description="Email result matches Google calculator" finished-at="2023-03-03T12:40:30 AMT" duration-ms="51173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareEmailResultWithCalculator -->
-        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.HardcoreTest@3bd40a57]" started-at="2023-03-03T12:20:44 AMT" name="stopBrowser" finished-at="2023-03-03T12:20:45 AMT" duration-ms="1082" status="PASS">
+        <test-method is-config="true" signature="stopBrowser()[pri:0, instance:test.HardcoreTest@3bd40a57]" started-at="2023-03-03T12:40:30 AMT" name="stopBrowser" finished-at="2023-03-03T12:40:31 AMT" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopBrowser -->

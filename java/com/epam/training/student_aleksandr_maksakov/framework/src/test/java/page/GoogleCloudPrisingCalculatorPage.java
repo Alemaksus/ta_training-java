@@ -222,15 +222,15 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
         return this;
     }
 
-    public GoogleCloudPrisingCalculatorPage clickSendEmailButton() {
+    public GoogleCloudPrisingCalculatorPage clickSendEmailButton() throws InterruptedException {
 
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("window.scrollTo()", "0,150");
+        executor.executeScript("window.scrollBy(0,200)", "");
 //        WebElement element = driver.findElement(sendEmailButton);
 //        new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
 //                .until(ExpectedConditions.elementToBeClickable(element));
 //        executor.executeScript("arguments[0].scrollIntoView();", element);
-
+        Thread.sleep(2000);
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(sendEmailButton)).click();
         return this;
