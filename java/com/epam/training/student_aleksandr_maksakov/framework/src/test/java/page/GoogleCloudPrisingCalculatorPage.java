@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import org.openqa.selenium.JavascriptExecutor;
+
 public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
 
     @FindBy(xpath = "//label[contains(text(), 'Number of instances')]/following-sibling::input")
@@ -161,29 +162,12 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
         return this;
     }
 
-//    public GoogleCloudPrisingCalculatorPage chooseDatabaseLocation(VirtualMachine VM) {
-//        final By databaseLocationSelector=
-//                By.xpath("//md-option[@region-option and @value='" + VM.getDatabaseLocation() +
-//                        "' and @id='select_option_230']/div");
-//
-//        databaseLocationContainer.click();
-//        JavascriptExecutor executor = (JavascriptExecutor) driver;
-//        WebElement element = driver.findElement(databaseLocationSelector);
-//        executor.executeScript("arguments[0].scrollIntoView();", element);
-//        new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
-//                .until(ExpectedConditions.elementToBeClickable(databaseLocationSelector)).click();
-//        return this;
-//    }
-
     public GoogleCloudPrisingCalculatorPage chooseDatabaseLocation(VirtualMachine VM) {
 
         final By databaseLocationSelector=
                 By.xpath("//md-option[@id='select_option_232' and " +
                         "@value='" + VM.getDatabaseLocation() + "']/div");
 
-//        final By databaseLocationSelector=
-//                By.xpath("//*[@id='select_value_label_92']/span[1]" +
-//                        "/div[@value='" + VM.getDatabaseLocation() + "']");
 
         databaseLocationContainer.click();
 
@@ -241,7 +225,7 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
     public GoogleCloudPrisingCalculatorPage clickSendEmailButton() {
 
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("window.scrollBy(0,250)", "");
+        executor.executeScript("window.scrollTo()", "0,150");
 //        WebElement element = driver.findElement(sendEmailButton);
 //        new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
 //                .until(ExpectedConditions.elementToBeClickable(element));
