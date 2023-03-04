@@ -230,12 +230,17 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
     public GoogleCloudPrisingCalculatorPage clickSendEmailButton() throws InterruptedException {
 
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("window.scrollBy(0,200)", ""); //- it works
+        executor.executeScript("window.scrollTo(0,300)", ""); //- it works
 
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
-                .until(ExpectedConditions.elementToBeClickable(sendEmailButton)).click();
+                .until(ExpectedConditions.visibilityOf(sendEmailButton)).click();
         return this;
     }
+
+//        WebElement myElement = new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(button));
+//    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", myElement);
+//a.moveToElement(webElement).build().perform();
+
 
 //        Actions actions = new Actions(driver);
 //        Thread.sleep(2000);
