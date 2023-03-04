@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -61,8 +62,12 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
                     "and contains(text(), 'Total Estimated Cost')]");
     private final By emailButton=
             By.xpath("//button[@id='Email Estimate']");
-    private final By sendEmailButton=
-            By.xpath("//form[@name='emailForm']//button[contains(@class,'cpc-button')]");
+//    private final By sendEmailButton=
+//            By.xpath("//form[@name='emailForm']//button[contains(@class,'cpc-button')]");
+
+    @FindBy(xpath = "//form[@name='emailForm']//button[contains(@class,'cpc-button')]")
+    public WebElement sendEmailButton;
+
     private final By emailField=
             By.xpath("//form[@name='emailForm']//input[@ng-model='emailQuote.user.email']");
     private final By mainIframe=
@@ -225,16 +230,25 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
     public GoogleCloudPrisingCalculatorPage clickSendEmailButton() throws InterruptedException {
 
         JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("window.scrollBy(0,200)", "");
-//        WebElement element = driver.findElement(sendEmailButton);
-//        new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
-//                .until(ExpectedConditions.elementToBeClickable(element));
-//        executor.executeScript("arguments[0].scrollIntoView();", element);
-        Thread.sleep(2000);
+        executor.executeScript("window.scrollBy(0,200)", ""); //- it works
+
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
                 .until(ExpectedConditions.elementToBeClickable(sendEmailButton)).click();
         return this;
     }
+
+//        Actions actions = new Actions(driver);
+//        Thread.sleep(2000);
+//        actions.moveToElement(sendEmailButton).perform(); - it does not work: with the error:
+//        org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+
+//        WebElement element = driver.findElement(sendEmailButton);
+//        new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
+//                .until(ExpectedConditions.elementToBeClickable(element));
+//        executor.executeScript("arguments[0].scrollIntoView();", element);
+
+
+
 
     public GoogleCloudPrisingCalculatorPage inputCopiedEmail() {
         new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT_SECONDS))
