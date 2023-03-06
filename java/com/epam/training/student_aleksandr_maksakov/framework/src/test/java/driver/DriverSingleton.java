@@ -29,7 +29,7 @@ public class DriverSingleton {
                     driver = new ChromeDriver();
                 }
             }
-            driver.manage().window().maximize();
+            driver.manage().window().setSize(new Dimension(1920, 1080));
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 

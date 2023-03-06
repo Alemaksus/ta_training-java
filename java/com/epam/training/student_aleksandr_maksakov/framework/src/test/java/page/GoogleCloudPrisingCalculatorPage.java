@@ -227,7 +227,7 @@ public class GoogleCloudPrisingCalculatorPage extends AbstractPage {
         return this;
     }
 
-    public GoogleCloudPrisingCalculatorPage clickSendEmailButton() throws InterruptedException {
+    public GoogleCloudPrisingCalculatorPage clickSendEmailButton(){
 
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("window.scrollTo(0,2000)", ""); //- it works
